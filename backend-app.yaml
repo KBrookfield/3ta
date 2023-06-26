@@ -7,7 +7,7 @@ data:
   mysql_user: ZGV2b3Bz
   db_passwd: cGFzc3dvcmQ=
   #mysql_host: <BASE64_ENCODED_IP_FOR_MYSQL_VM>
-  mysql_host: MTkyLjE2OC4zMC4zNw==
+  mysql_host: 
   db_name: ZGVtbw==
 
 ---
@@ -29,7 +29,7 @@ spec:
     spec:
       containers:
         - name: backend-app
-          image: harbor.vmw.lab/3ta/backend:latest
+          image: jswolf059/developer-utilities-backend:latest
           ports:
             - containerPort: 5000
           env:
